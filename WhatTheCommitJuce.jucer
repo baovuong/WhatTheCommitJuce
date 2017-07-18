@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Qpr9Xk" name="WhatTheCommitJuce" displaySplashScreen="1"
+              reportAppUsage="1" splashScreenColour="Dark" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="com.yourcompany.WhatTheCommitJuce"
+              includeBinaryInAppConfig="1" jucerVersion="5.0.2">
+  <MAINGROUP id="wWBqHt" name="WhatTheCommitJuce">
+    <GROUP id="{D69D4423-0BE0-3C02-1B83-6931E8519456}" name="Source">
+      <FILE id="X2cC72" name="CommitMessageComponent.cpp" compile="1" resource="0"
+            file="Source/CommitMessageComponent.cpp"/>
+      <FILE id="MbQIYM" name="CommitMessageComponent.h" compile="0" resource="0"
+            file="Source/CommitMessageComponent.h"/>
+      <FILE id="z0gAtH" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="Ti2e28" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="hoiTg1" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="WhatTheCommitJuce"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="WhatTheCommitJuce"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Programs/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="WhatTheCommitJuce"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="WhatTheCommitJuce"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Programs/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" linuxCodeBlocksArchitecture="-m64" isDebug="1" optimisation="1"
+                       targetName="WhatTheCommitJuce"/>
+        <CONFIGURATION name="Release" linuxCodeBlocksArchitecture="-m64" isDebug="0"
+                       optimisation="3" targetName="WhatTheCommitJuce"/>
+        <CONFIGURATION name="New Build Configuration" linuxCodeBlocksArchitecture="-m64"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../Programs/JUCE/modules"/>
+      </MODULEPATHS>
+    </CODEBLOCKS_LINUX>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
